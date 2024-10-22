@@ -10,6 +10,8 @@ schemes:
 paths:
   /classify:
     get:
+      summary: "Подбор классов"
+      description: "Для переданного наименования номенклатуры подбирает все классы в глубину на базе классификатора"
       operationId: "classify"
       produces:
       - "application/json"
