@@ -3,7 +3,7 @@ window.onload = function() {
 
   // the following lines will be replaced by docker/configurator, when it runs in a docker-container
   window.ui = SwaggerUIBundle({
-    url: "aws-openai-classifier-api-v0.yaml",
+    url: "AWS OpenAI Classifier ECO API-prod-swagger.yaml",
     dom_id: '#swagger-ui',
     deepLinking: true,
     presets: [
