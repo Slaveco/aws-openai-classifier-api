@@ -25,17 +25,6 @@ paths:
           description: "200 response"
           schema:
             $ref: "#/definitions/modelResponseForClassifiy"
-          example:
-            input_item_name: "Труба тип 3-820x9-К52 ГОСТ 20295-85"
-            result:
-              - class_name: "ТРУБЫ СТАЛЬНЫЕ"
-                class_code: "04"
-              - class_name: "Трубы стальные круглые(кроме ВГП)"
-                class_code: "0401"
-              - class_name: "Трубы стальные электросварные"
-                class_code: "040102"
-              - class_name: "Трубы стальные сварные для магистральных газонефтепроводов"
-                class_code: "04010202"
         "400":
           description: "400 response"
         "500":
