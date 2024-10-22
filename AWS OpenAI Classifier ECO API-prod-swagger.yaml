@@ -150,12 +150,32 @@ definitions:
               type: "string"
             name:
               type: "string"
+            attributes:
+              type:
+                - "array"
+                - null
+              items:
+                type: "object"
+                properties:
+                  attribute_name:
+                    type: "string"
+                  attribute_type:
+                    type: "string"
+                  attribute_example:
+                    type:
+                      - "string"
+                      - null
+                required:
+                  - "attribute_name"
+                  - "attribute_type"
+                  - "attribute_example"
           required:
-          - "code"
-          - "name"
+            - "code"
+            - "name"
+            - "attributes"
       required:
-      - "data"
-      - "key"
+        - "key"
+        - "data"
   modelRequestForPickAtt:
     type: "object"
     required:
