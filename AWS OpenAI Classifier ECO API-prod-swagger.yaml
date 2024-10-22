@@ -37,6 +37,8 @@ paths:
       - api_key: []
   /pickAtt:
     post:
+      summary: "Подбор значений для аттрибутов"
+      description: "Для переданного наименования номенклатуры на базе переданного конечного класса определяет значения аттрибутов"
       operationId: "pickAtt"
       consumes:
       - "application/json"
@@ -65,6 +67,8 @@ paths:
       - api_key: []
   /updateClassifier:
     post:
+      summary: "Обновление данных в классификаторе"
+      description: "Обновляет данные в классификаторе (Redis). Если ключ уже существует, то данные по нему перезаписываются, если нет — создается новый ключ c переданными по нему данными"
       operationId: "updateClassifier"
       consumes:
       - "application/json"
